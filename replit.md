@@ -2,11 +2,16 @@
 
 ## Overview
 
-This is a modern, full-stack web application for TECHNEWITY LABS, a technology consulting company. The application features a sleek landing page with contact form functionality, built using React, Express, and PostgreSQL with Drizzle ORM.
+This is a modern, full-stack web application for TECHNEWITY LABS, a technology consulting company based in Mumbai, India. The application features a dark-themed professional landing page with 3D visual elements, team showcase, project portfolio, and fully functional contact form with email notifications. Built using React, Express, Nodemailer, and in-memory storage for optimal performance.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preference: Modern dark UI with 3D components, inspired by Orchids design.
+Contact email: contact@technewity.com
+Phone: +91 98216 79475
+Location: Mumbai, India
+LinkedIn: https://www.linkedin.com/company/technewity-labs/
 
 ## System Architecture
 
@@ -32,17 +37,34 @@ Preferred communication style: Simple, everyday language.
 
 ## Key Components
 
+### Team Structure
+**Leadership Team:**
+- Mr. Newprakash Chandra - Founder & CEO (Marketing and Business)
+- Mr. Prasanna Kolambkar - CTO (Backend Engineering Specialist)
+
+**Development Team:**
+- Vivek Pandey - ML | Backend Engineer
+- Omkar Chandra - Frontend Specialist (UI Design)
+- Shreyansh Rai - Full Stack Engineer
+- Sagar Gupta - Cybersecurity Specialist
+
+### Featured Projects
+- **ACCU Design**: Company website with modern design and responsive architecture
+- **Engineering Hub**: Educational platform for Mumbai University engineering students
+
 ### Frontend Components
-- **Navigation**: Sticky navigation with smooth scrolling
-- **Hero Section**: Gradient background with call-to-action buttons
-- **Services Section**: Three main service offerings with icons
-- **Features Section**: Company value propositions
-- **Contact Section**: Form with validation and submission handling
-- **Footer**: Company information and social links
+- **Navigation**: Dark theme sticky navigation with pill-shaped menu and smooth scrolling
+- **Hero Section**: Dark gradient background with 3D floating elements and animations
+- **Projects Section**: Showcase of ACCU Design and Engineering Hub projects
+- **Services Section**: Three main service offerings (Engineering, Education, Consulting)
+- **Team Section**: Leadership team (CEO & CTO) and 4-person development team with photos
+- **Contact Section**: Dark-themed form with validation and email notifications
+- **Footer**: Modern dark footer with contact info and LinkedIn integration
 
 ### Backend Services
-- **Storage Interface**: Abstracted storage layer supporting multiple implementations
+- **Storage Interface**: In-memory storage for optimal performance
 - **Inquiry Management**: CRUD operations for contact form submissions
+- **Email Service**: Nodemailer integration for contact form notifications
 - **Error Handling**: Centralized error middleware with proper status codes
 - **Request Logging**: Detailed API request/response logging
 
@@ -97,7 +119,23 @@ Preferred communication style: Simple, everyday language.
 - **Asset Management**: Vite handles static assets and bundling
 
 ### Key Features
+- **Modern Dark Theme**: Professional dark UI inspired by Orchids design
+- **3D Visual Elements**: Floating animations and interactive components
 - **Responsive Design**: Mobile-first approach with Tailwind breakpoints
 - **Type Safety**: End-to-end TypeScript with shared types
+- **Email Integration**: Nodemailer for contact form notifications
+- **Team Showcase**: Professional team member profiles with photos
+- **Project Portfolio**: Featured company projects and case studies
 - **Modern Development**: Hot module replacement and fast refresh
 - **Production Ready**: Optimized builds and proper error handling
+
+## Recent Changes (January 2025)
+- ✅ Implemented modern dark theme with green accent colors
+- ✅ Added 3D floating animations and visual effects
+- ✅ Created team section with leadership and development teams
+- ✅ Built projects section showcasing ACCU Design and Engineering Hub
+- ✅ Integrated Nodemailer for contact form email notifications
+- ✅ Updated all contact details (Mumbai, India location and phone number)
+- ✅ Added LinkedIn integration for company profile
+- ✅ Redesigned all sections with modern dark aesthetic
+- ✅ Implemented responsive design for all screen sizes

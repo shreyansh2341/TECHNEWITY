@@ -14,50 +14,58 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
+    <nav className="bg-[hsl(240,10%,3.9%)]/95 backdrop-blur-lg border-b border-[hsl(240,3.7%,15.9%)] sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-[hsl(221,83%,53%)]">
+            <div className="text-2xl font-bold text-white tracking-tight">
               TECHNEWITY LABS
             </div>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="text-slate-600 hover:text-[hsl(221,83%,53%)] px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection("services")}
-                className="text-slate-600 hover:text-[hsl(221,83%,53%)] px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Services
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-slate-600 hover:text-[hsl(221,83%,53%)] px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Contact
-              </button>
-              <Button
-                onClick={() => scrollToSection("contact")}
-                className="bg-[hsl(221,83%,53%)] text-white hover:bg-[hsl(221,83%,45%)]"
-              >
-                Get Started
-              </Button>
+          <div className="hidden md:flex items-center">
+            <div className="bg-[hsl(240,3.7%,15.9%)] rounded-full p-1 mr-8">
+              <div className="flex items-center space-x-1">
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-2 text-sm font-medium transition-colors rounded-full hover:bg-[hsl(240,10%,3.9%)]"
+                >
+                  Home
+                </button>
+                <button
+                  onClick={() => scrollToSection("projects")}
+                  className="text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-2 text-sm font-medium transition-colors rounded-full hover:bg-[hsl(240,10%,3.9%)]"
+                >
+                  Projects
+                </button>
+                <button
+                  onClick={() => scrollToSection("services")}
+                  className="text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-2 text-sm font-medium transition-colors rounded-full hover:bg-[hsl(240,10%,3.9%)]"
+                >
+                  Services
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-2 text-sm font-medium transition-colors rounded-full hover:bg-[hsl(240,10%,3.9%)]"
+                >
+                  Contact
+                </button>
+              </div>
             </div>
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="tech-gradient text-white hover:bg-[hsl(142,76%,30%)] px-6 py-2 rounded-full glow-effect"
+            >
+              Get Started
+            </Button>
           </div>
           
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-slate-600 hover:text-[hsl(221,83%,53%)] p-2"
+              className="text-[hsl(240,5%,64.9%)] hover:text-white p-2"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -66,31 +74,39 @@ export default function Navigation() {
         
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 space-y-2">
+          <div className="md:hidden py-4 space-y-2 bg-[hsl(240,3.7%,15.9%)] rounded-lg mt-2 mb-4">
             <button
               onClick={() => scrollToSection("home")}
-              className="block w-full text-left text-slate-600 hover:text-[hsl(221,83%,53%)] px-3 py-2 text-sm font-medium transition-colors"
+              className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-colors"
             >
               Home
             </button>
             <button
+              onClick={() => scrollToSection("projects")}
+              className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-colors"
+            >
+              Projects
+            </button>
+            <button
               onClick={() => scrollToSection("services")}
-              className="block w-full text-left text-slate-600 hover:text-[hsl(221,83%,53%)] px-3 py-2 text-sm font-medium transition-colors"
+              className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-colors"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block w-full text-left text-slate-600 hover:text-[hsl(221,83%,53%)] px-3 py-2 text-sm font-medium transition-colors"
+              className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-colors"
             >
               Contact
             </button>
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className="w-full mt-2 bg-[hsl(221,83%,53%)] text-white hover:bg-[hsl(221,83%,45%)]"
-            >
-              Get Started
-            </Button>
+            <div className="px-4 pt-2">
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="w-full tech-gradient text-white hover:bg-[hsl(142,76%,30%)] rounded-full"
+              >
+                Get Started
+              </Button>
+            </div>
           </div>
         )}
       </div>

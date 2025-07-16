@@ -4,53 +4,56 @@
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(222, 84%, 4.9%);
-  --muted: hsl(210, 40%, 98%);
-  --muted-foreground: hsl(215, 16%, 47%);
+  --foreground: hsl(0, 0%, 3.9%);
+  --muted: hsl(0, 0%, 96.1%);
+  --muted-foreground: hsl(0, 0%, 45.1%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(0, 0%, 3.9%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222, 84%, 4.9%);
-  --border: hsl(214, 32%, 91%);
-  --input: hsl(214, 32%, 91%);
-  --primary: hsl(221, 83%, 53%);
-  --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(210, 40%, 96%);
-  --secondary-foreground: hsl(222, 47%, 11%);
-  --accent: hsl(210, 40%, 96%);
-  --accent-foreground: hsl(222, 47%, 11%);
+  --card-foreground: hsl(0, 0%, 3.9%);
+  --border: hsl(0, 0%, 89.8%);
+  --input: hsl(0, 0%, 89.8%);
+  --primary: hsl(142, 76%, 36%);
+  --primary-foreground: hsl(355, 7%, 97%);
+  --secondary: hsl(0, 0%, 96.1%);
+  --secondary-foreground: hsl(0, 0%, 9%);
+  --accent: hsl(0, 0%, 96.1%);
+  --accent-foreground: hsl(0, 0%, 9%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(221, 83%, 53%);
-  --radius: 0.5rem;
+  --ring: hsl(142, 76%, 36%);
+  --radius: 0.75rem;
   
-  /* Custom colors for TECHNEWITY LABS */
-  --tech-primary: hsl(221, 83%, 53%);
-  --tech-secondary: hsl(215, 25%, 27%);
-  --tech-accent: hsl(199, 89%, 48%);
-  --tech-neutral: hsl(210, 20%, 98%);
+  /* Custom TECHNEWITY LABS Dark Theme */
+  --tech-bg-primary: hsl(240, 10%, 3.9%);
+  --tech-bg-secondary: hsl(240, 3.7%, 15.9%);
+  --tech-accent: hsl(142, 76%, 36%);
+  --tech-accent-hover: hsl(142, 76%, 30%);
+  --tech-text-primary: hsl(0, 0%, 98%);
+  --tech-text-secondary: hsl(240, 5%, 64.9%);
+  --tech-border: hsl(240, 3.7%, 15.9%);
 }
 
 .dark {
-  --background: hsl(222, 84%, 4.9%);
-  --foreground: hsl(210, 40%, 98%);
-  --muted: hsl(217, 32%, 17%);
-  --muted-foreground: hsl(215, 20%, 65%);
-  --popover: hsl(222, 84%, 4.9%);
-  --popover-foreground: hsl(210, 40%, 98%);
-  --card: hsl(222, 84%, 4.9%);
-  --card-foreground: hsl(210, 40%, 98%);
-  --border: hsl(217, 32%, 17%);
-  --input: hsl(217, 32%, 17%);
-  --primary: hsl(221, 83%, 53%);
-  --primary-foreground: hsl(222, 84%, 4.9%);
-  --secondary: hsl(217, 32%, 17%);
-  --secondary-foreground: hsl(210, 40%, 98%);
-  --accent: hsl(217, 32%, 17%);
-  --accent-foreground: hsl(210, 40%, 98%);
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(142, 76%, 36%);
+  --primary-foreground: hsl(355, 7%, 97%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 62%, 30%);
-  --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(221, 83%, 53%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(142, 76%, 36%);
 }
 
 @layer base {
@@ -68,15 +71,42 @@
 }
 
 @layer components {
-  .gradient-bg {
-    background: linear-gradient(135deg, hsl(221, 83%, 53%) 0%, hsl(220, 70%, 50%) 50%, hsl(199, 89%, 48%) 100%);
+  .dark-gradient-bg {
+    background: radial-gradient(ellipse at center, hsl(240, 3.7%, 15.9%) 0%, hsl(240, 10%, 3.9%) 100%);
   }
   
-  .service-card {
+  .tech-gradient {
+    background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(142, 76%, 30%) 100%);
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px hsl(142, 76%, 36% / 0.3);
+  }
+  
+  .card-hover {
     transition: all 0.3s ease;
   }
   
-  .service-card:hover {
+  .card-hover:hover {
     transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes pulse-glow {
+    from { box-shadow: 0 0 20px hsl(142, 76%, 36% / 0.4); }
+    to { box-shadow: 0 0 30px hsl(142, 76%, 36% / 0.8); }
   }
 }
