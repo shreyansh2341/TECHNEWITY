@@ -47,6 +47,12 @@ export default function Navigation() {
                   Services
                 </button>
                 <button
+                  onClick={() => scrollToSection("team")}
+                  className="text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full hover:bg-green-500/20 hover:shadow-lg"
+                >
+                  Team
+                </button>
+                <button
                   onClick={() => scrollToSection("contact")}
                   className="text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full hover:bg-green-500/20 hover:shadow-lg"
                 >
@@ -66,39 +72,71 @@ export default function Navigation() {
             </Button>
           </div>
           
-
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-[hsl(240,5%,64.9%)] hover:text-white p-2 transition-colors duration-300"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
         
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-2 modern-glass rounded-lg mt-2 mb-4 neon-border">
             <button
-              onClick={() => scrollToSection("home")}
+              onClick={() => {
+                scrollToSection("home");
+                setIsMenuOpen(false);
+              }}
               className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-green-500/20"
             >
               Home
             </button>
             <button
-              onClick={() => scrollToSection("projects")}
+              onClick={() => {
+                scrollToSection("projects");
+                setIsMenuOpen(false);
+              }}
               className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-green-500/20"
             >
               Projects
             </button>
             <button
-              onClick={() => scrollToSection("services")}
+              onClick={() => {
+                scrollToSection("services");
+                setIsMenuOpen(false);
+              }}
               className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-green-500/20"
             >
               Services
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => {
+                scrollToSection("team");
+                setIsMenuOpen(false);
+              }}
+              className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-green-500/20"
+            >
+              Team
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection("contact");
+                setIsMenuOpen(false);
+              }}
               className="block w-full text-left text-[hsl(240,5%,64.9%)] hover:text-white px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-green-500/20"
             >
               Contact
             </button>
             <div className="px-4 pt-2">
               <Button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => {
+                  scrollToSection("contact");
+                  setIsMenuOpen(false);
+                }}
                 className="w-full tech-gradient text-white hover:bg-[hsl(142,76%,30%)] rounded-full glow-effect"
               >
                 Get Started
