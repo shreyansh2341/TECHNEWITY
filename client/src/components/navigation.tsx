@@ -66,15 +66,7 @@ export default function Navigation() {
             </Button>
           </div>
           
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[hsl(240,5%,64.9%)] hover:text-white p-2"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+
         </div>
         
         {/* Mobile Navigation */}

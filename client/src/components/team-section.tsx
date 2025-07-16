@@ -7,7 +7,7 @@ const leadershipTeam = [
     id: 'ceo',
     name: 'Mr. Newprakash Chandra',
     role: 'Founder & Chief Executive Officer',
-    description: 'Vision behind TECHNEWITY | Handles all Marketing and Business',
+    description: 'Visionary leader driving strategic growth and market expansion with innovative business solutions',
     imageUrl: '',
     icon: Crown,
     color: 'text-yellow-400',
@@ -17,7 +17,7 @@ const leadershipTeam = [
     id: 'cto',
     name: 'Mr. Prasanna Kolambkar',
     role: 'Chief Technology Officer',
-    description: 'Mind behind TECHNEWITY | Specialist Backend Engineer',
+    description: 'Technical architect and backend specialist leading cutting-edge engineering excellence',
     imageUrl: '',
     icon: Cpu,
     color: 'text-blue-400',
@@ -30,7 +30,7 @@ const developmentTeam = [
     id: 'dev1',
     name: 'Vivek Pandey',
     role: 'ML | Backend Engineer',
-    description: 'Builds core Tech and also helps in Full Stack Application',
+    description: 'Machine learning specialist and full-stack engineer building intelligent solutions',
     imageUrl: 'https://i.postimg.cc/fbqSY9sp/Whats-App-Image-2025-07-15-at-19-43-47-8e3a80fd.jpg',
     icon: Code,
     color: 'text-green-400',
@@ -40,7 +40,7 @@ const developmentTeam = [
     id: 'dev2',
     name: 'Omkar Chandra',
     role: 'Frontend Specialist',
-    description: 'Specialist in UI Design',
+    description: 'Frontend specialist crafting exceptional user experiences and interface design',
     imageUrl: '',
     icon: Palette,
     color: 'text-pink-400',
@@ -50,7 +50,7 @@ const developmentTeam = [
     id: 'dev3',
     name: 'Shreyansh Rai',
     role: 'Full Stack Engineer',
-    description: 'Specialist in Full Stack Application',
+    description: 'Full-stack engineer delivering end-to-end application development excellence',
     imageUrl: '',
     icon: Layers,
     color: 'text-purple-400',
@@ -60,7 +60,7 @@ const developmentTeam = [
     id: 'dev4',
     name: 'Sagar Gupta',
     role: 'Cybersecurity Specialist',
-    description: 'Specialist in Securing Application',
+    description: 'Cybersecurity expert ensuring robust protection and security compliance across all platforms',
     imageUrl: 'https://i.postimg.cc/NFQRGwkk/Whats-App-Image-2025-07-15-at-19-13-31-017795ce.jpg',
     icon: Lock,
     color: 'text-red-400',
@@ -76,9 +76,9 @@ export default function TeamSection() {
           <div className="inline-block px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-green-400 text-sm font-medium mb-6">
             Our Team
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Meet the Experts</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">World-Class Engineering Team</h2>
           <p className="text-xl text-[hsl(240,5%,64.9%)] max-w-3xl mx-auto">
-            Our passionate team of innovators and engineers driving technological excellence.
+            Meet the brilliant minds behind TECHNEWITY LABS - a diverse team of industry experts, innovative engineers, and visionary leaders committed to delivering exceptional results.
           </p>
         </div>
 

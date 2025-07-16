@@ -38,11 +38,11 @@ export default function HeroSection() {
             </h1>
             
             <h2 className="text-xl md:text-2xl text-[hsl(240,5%,64.9%)] mb-8 font-light">
-              Engineering Solutions That Drive Innovation
+              Transforming Ideas Into Digital Excellence
             </h2>
             
             <p className="text-lg text-[hsl(240,5%,64.9%)] mb-12 max-w-2xl leading-relaxed">
-              Empowering the next generation through cutting-edge coding education and professional engineering services.
+              We deliver world-class engineering solutions, innovative education platforms, and strategic technology consulting that accelerates business growth and drives sustainable success.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

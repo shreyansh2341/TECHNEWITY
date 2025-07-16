@@ -6,7 +6,7 @@ const projects = [
   {
     id: 'accu-design',
     title: 'ACCU Design',
-    description: 'Enterprise-grade company website with advanced digital solutions.',
+    description: 'Modern enterprise website featuring responsive design, advanced digital solutions, and scalable architecture for optimal performance.',
     category: 'Enterprise Web Development',
     technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'Vercel'],
     icon: Globe,
@@ -17,7 +17,7 @@ const projects = [
   {
     id: 'engineering-hub',
     title: 'Engineering Hub',
-    description: 'Advanced LMS platform for Mumbai University engineering students.',
+    description: 'Comprehensive learning management system designed specifically for Mumbai University engineering students with interactive features and real-time collaboration.',
     category: 'EdTech Platform',
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Redis', 'AWS'],
     icon: GraduationCap,
@@ -37,7 +37,7 @@ export default function ProjectsSection() {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
           <p className="text-lg text-[hsl(240,5%,64.9%)] max-w-2xl mx-auto">
-            Showcasing enterprise-grade solutions with cutting-edge technology stacks.
+            Delivering enterprise-grade solutions with advanced technology stacks that drive innovation and business transformation.
           </p>
         </div>
 

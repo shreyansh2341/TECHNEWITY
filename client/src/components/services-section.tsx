@@ -6,7 +6,7 @@ const services = [
   {
     icon: Settings,
     title: "Engineering Solutions",
-    description: "Our precision-driven engineering team delivers cutting-edge technology solutions with unmatched reliability. From system architecture to implementation, we ensure your projects are built to exceed expectations with robust, scalable, and future-proof designs.",
+    description: "Enterprise-grade engineering solutions built with precision and excellence. We architect, develop, and deploy scalable systems that drive business transformation with unmatched reliability and performance.",
     color: "text-blue-400",
     bgColor: "bg-blue-400/10",
     borderColor: "border-blue-400/20"
@@ -14,7 +14,7 @@ const services = [
   {
     icon: GraduationCap,
     title: "Coding Education",
-    description: "Transform your career with comprehensive coding education tailored to industry demands. Our expert instructors provide hands-on learning experiences, real-world projects, and mentorship to accelerate your journey from beginner to professional developer.",
+    description: "Industry-leading coding education programs designed for the modern developer. Master cutting-edge technologies through hands-on projects, expert mentorship, and real-world applications that accelerate career growth.",
     color: "text-purple-400",
     bgColor: "bg-purple-400/10",
     borderColor: "border-purple-400/20"
@@ -22,7 +22,7 @@ const services = [
   {
     icon: Lightbulb,
     title: "Innovation Consulting",
-    description: "Stay ahead of the competition with our strategic innovation consulting services. We help businesses identify opportunities, implement future-ready solutions, and develop competitive advantages through data-driven insights and forward-thinking strategies.",
+    description: "Strategic technology consulting that transforms businesses for the digital future. We identify opportunities, implement cutting-edge solutions, and build competitive advantages through data-driven innovation strategies.",
     color: "text-green-400",
     bgColor: "bg-green-400/10",
     borderColor: "border-green-400/20"
@@ -44,9 +44,9 @@ export default function ServicesSection() {
           <div className="inline-block px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-green-400 text-sm font-medium mb-6">
             What We Do
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Comprehensive Technology Solutions</h2>
           <p className="text-xl text-[hsl(240,5%,64.9%)] max-w-3xl mx-auto">
-            At TECHNEWITY LABS, we combine technical expertise with innovative thinking to deliver exceptional results that drive your business forward.
+            From enterprise-grade engineering to cutting-edge education platforms, we deliver transformative solutions that accelerate business growth and empower innovation across industries.
           </p>
         </div>
 

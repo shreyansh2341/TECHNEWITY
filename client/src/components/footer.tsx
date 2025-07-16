@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="text-3xl font-bold mb-4 text-white">TECHNEWITY LABS</div>
             <p className="text-[hsl(240,5%,64.9%)] mb-6 max-w-md leading-relaxed">
-              Engineering excellence through innovative technology solutions, comprehensive education, and strategic consulting services.
+              Pioneering the future of technology through innovative engineering solutions, cutting-edge education platforms, and strategic consulting that transforms businesses worldwide.
             </p>
             <div className="flex space-x-4">
               <a
