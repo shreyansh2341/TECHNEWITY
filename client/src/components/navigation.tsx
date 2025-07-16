@@ -17,12 +17,18 @@ export default function Navigation() {
     <nav className="bg-[hsl(240,10%,3.9%)]/95 backdrop-blur-xl border-b border-[hsl(240,3.7%,15.9%)] sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Left - Logo */}
-          <div className="flex items-center">
-            <div className="text-2xl font-bold text-white tracking-tight">
-              TECHNEWITY LABS
-            </div>
+                  {/* Left - Logo and Brand */}
+        <div className="flex items-center space-x-2">
+          <img
+            src="/logo.png"
+            alt="Technewity Logo"
+            className="h-10 w-10 object-contain rounded-xl shadow-md"
+          />
+          <div className="text-2xl font-bold text-white tracking-tight">
+            TECHNEWITY LABS
           </div>
+        </div>
+
           
           {/* Center - Navigation Pills (like Orchids design) */}
           <div className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2">

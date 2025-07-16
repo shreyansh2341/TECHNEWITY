@@ -8,7 +8,7 @@ const leadershipTeam = [
     name: 'Mr. Newprakash Chandra',
     role: 'Founder & Chief Executive Officer',
     description: 'Visionary leader driving strategic growth and market expansion with innovative business solutions',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dvjgonm7l/image/upload/v1752684462/WhatsApp_Image_2025-07-15_at_22.05.46_6a80c6d9_hat94h.jpg',
     icon: Crown,
     color: 'text-yellow-400',
     bgColor: 'bg-yellow-400/10'
@@ -31,7 +31,7 @@ const developmentTeam = [
     name: 'Vivek Pandey',
     role: 'ML | Backend Engineer',
     description: 'Machine learning specialist and full-stack engineer building intelligent solutions',
-    imageUrl: 'https://i.postimg.cc/fbqSY9sp/Whats-App-Image-2025-07-15-at-19-43-47-8e3a80fd.jpg',
+    imageUrl: 'https://res.cloudinary.com/dvjgonm7l/image/upload/v1752684343/WhatsApp_Image_2025-07-15_at_19.43.50_d1800b64_c1zpz3.jpg',
     icon: Code,
     color: 'text-green-400',
     bgColor: 'bg-green-400/10'
@@ -41,7 +41,7 @@ const developmentTeam = [
     name: 'Omkar Chandra',
     role: 'Frontend Specialist',
     description: 'Frontend specialist crafting exceptional user experiences and interface design',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dvjgonm7l/image/upload/v1752684963/WhatsApp_Image_2025-07-16_at_22.23.47_40db7992_d00k1i.jpg',
     icon: Palette,
     color: 'text-pink-400',
     bgColor: 'bg-pink-400/10'
@@ -51,7 +51,7 @@ const developmentTeam = [
     name: 'Shreyansh Rai',
     role: 'Full Stack Engineer',
     description: 'Full-stack engineer delivering end-to-end application development excellence',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dvjgonm7l/image/upload/v1752685159/WhatsApp_Image_2025-07-16_at_22.25.16_712c6e4a_hgoces.jpg',
     icon: Layers,
     color: 'text-purple-400',
     bgColor: 'bg-purple-400/10'
@@ -61,7 +61,7 @@ const developmentTeam = [
     name: 'Sagar Gupta',
     role: 'Cybersecurity Specialist',
     description: 'Cybersecurity expert ensuring robust protection and security compliance across all platforms',
-    imageUrl: 'https://i.postimg.cc/NFQRGwkk/Whats-App-Image-2025-07-15-at-19-13-31-017795ce.jpg',
+    imageUrl: 'https://res.cloudinary.com/dvjgonm7l/image/upload/v1752684151/WhatsApp_Image_2025-07-15_at_19.13.34_66059a0b_yav5ww.jpg',
     icon: Lock,
     color: 'text-red-400',
     bgColor: 'bg-red-400/10'
