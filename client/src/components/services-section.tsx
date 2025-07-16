@@ -65,14 +65,7 @@ export default function ServicesSection() {
                   <p className="text-[hsl(240,5%,64.9%)] mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  <Button
-                    onClick={scrollToContact}
-                    variant="ghost"
-                    className="p-0 h-auto font-semibold text-green-400 hover:text-green-300 hover:bg-transparent"
-                  >
-                    Learn more
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+
                 </CardContent>
               </Card>
             );

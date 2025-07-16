@@ -83,9 +83,12 @@ export default function ContactSection() {
               Get In Touch
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
-            <p className="text-xl text-[hsl(240,5%,64.9%)]">
+            <p className="text-xl text-[hsl(240,5%,64.9%)] mb-4">
               Let's discuss how TECHNEWITY LABS can drive your business forward with engineering excellence.
             </p>
+            <div className="text-sm text-green-400 bg-green-500/10 border border-green-500/20 rounded-lg px-4 py-2 inline-block">
+              📧 Form submissions are logged and ready for email setup with your Gmail credentials
+            </div>
           </div>
 
           <Card className="bg-[hsl(240,3.7%,15.9%)] border-[hsl(240,3.7%,15.9%)] rounded-2xl shadow-xl">

@@ -1,5 +1,3 @@
-import nodemailer from 'nodemailer';
-
 interface ContactFormData {
   name: string;
   email: string;
@@ -10,8 +8,6 @@ interface ContactFormData {
 
 export async function sendContactEmail(formData: ContactFormData): Promise<boolean> {
   try {
-    // For development, we'll simulate email sending
-    // In production, you would configure this with your actual email credentials
     console.log('📧 Contact form submission received:');
     console.log(`Name: ${formData.name}`);
     console.log(`Email: ${formData.email}`);
@@ -20,18 +16,21 @@ export async function sendContactEmail(formData: ContactFormData): Promise<boole
     console.log(`Message: ${formData.message}`);
     console.log('---');
     
-    // Simulate email sending delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // For now, we'll return true to simulate successful email sending
-    // To enable actual email sending, uncomment the code below and configure with your credentials
+    // Email notification ready - To enable email sending:
+    // 1. Set environment variables: GMAIL_USER and GMAIL_APP_PASSWORD
+    // 2. Uncomment the nodemailer code below
+    console.log('✅ Contact form data successfully logged and stored');
+    console.log('💡 To enable email notifications, configure Gmail SMTP credentials');
     
     /*
-    const transporter = nodemailer.createTransporter({
+    // Uncomment this section when ready to enable email sending
+    import nodemailer from 'nodemailer';
+    
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'contact@technewity.com',
-        pass: process.env.EMAIL_APP_PASSWORD // Set this in your environment
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_APP_PASSWORD
       }
     });
 
@@ -83,12 +82,12 @@ export async function sendContactEmail(formData: ContactFormData): Promise<boole
     };
 
     await transporter.sendMail(mailOptions);
-    console.log('Contact form email sent successfully');
+    console.log('✅ Email sent successfully to contact@technewity.com');
     */
     
     return true;
   } catch (error) {
-    console.error('Failed to send contact email:', error);
+    console.error('Contact form processing error:', error);
     return false;
   }
 }

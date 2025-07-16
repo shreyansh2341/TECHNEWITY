@@ -109,4 +109,72 @@
     from { box-shadow: 0 0 20px hsl(142, 76%, 36% / 0.4); }
     to { box-shadow: 0 0 30px hsl(142, 76%, 36% / 0.8); }
   }
+  
+  /* Enhanced 3D Elements for Orchids-style UI */
+  .tech-grid-bg {
+    background-image: 
+      linear-gradient(hsl(142, 76%, 36% / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(142, 76%, 36% / 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+  
+  .modern-glass {
+    background: hsl(240, 10%, 3.9% / 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(142, 76%, 36% / 0.2);
+  }
+  
+  .neon-border {
+    border: 1px solid hsl(142, 76%, 36%);
+    box-shadow: 
+      0 0 10px hsl(142, 76%, 36% / 0.5),
+      inset 0 0 10px hsl(142, 76%, 36% / 0.1);
+  }
+  
+  .tech-panel {
+    background: linear-gradient(135deg, 
+      hsl(240, 10%, 3.9%) 0%, 
+      hsl(240, 3.7%, 15.9%) 50%, 
+      hsl(240, 10%, 3.9%) 100%);
+    border: 1px solid hsl(240, 3.7%, 15.9%);
+  }
+  
+  .floating-3d {
+    animation: float3d 8s ease-in-out infinite;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes float3d {
+    0%, 100% { 
+      transform: translateY(0) rotateX(0deg) rotateY(0deg); 
+    }
+    33% { 
+      transform: translateY(-15px) rotateX(5deg) rotateY(5deg); 
+    }
+    66% { 
+      transform: translateY(-10px) rotateX(-3deg) rotateY(-3deg); 
+    }
+  }
+  
+  .code-animation {
+    animation: codeFlow 10s linear infinite;
+  }
+  
+  @keyframes codeFlow {
+    0% { opacity: 0; transform: translateX(-100px); }
+    10% { opacity: 1; transform: translateX(0); }
+    90% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0; transform: translateX(100px); }
+  }
+  
+  .tech-hover-effect {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  .tech-hover-effect:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+      0 20px 40px hsl(0, 0%, 0% / 0.3),
+      0 0 20px hsl(142, 76%, 36% / 0.3);
+  }
 }

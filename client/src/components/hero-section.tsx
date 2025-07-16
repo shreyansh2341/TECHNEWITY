@@ -10,13 +10,18 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative dark-gradient-bg min-h-screen flex items-center overflow-hidden">
-      {/* Animated background elements */}
+    <section id="home" className="relative dark-gradient-bg min-h-screen flex items-center overflow-hidden tech-grid-bg">
+      {/* Enhanced 3D animated background elements matching Orchids style */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-20 h-20 border border-green-500/20 rounded-lg floating-animation"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-green-500/10 rounded-full pulse-glow" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-40 left-20 w-12 h-12 border border-green-500/30 rounded-full floating-animation" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-green-500/5 rounded-lg pulse-glow" style={{ animationDelay: '1.5s' }}></div>
+        {/* Central floating tech elements */}
+        <div className="absolute top-32 left-1/4 w-16 h-16 border border-green-500/30 rounded-xl floating-3d neon-border"></div>
+        <div className="absolute top-48 right-1/3 w-12 h-12 bg-green-500/20 rounded-full pulse-glow" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 left-1/3 w-20 h-20 border border-green-500/20 rounded-lg floating-3d" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-48 right-1/4 w-14 h-14 bg-green-500/15 rounded-xl pulse-glow" style={{ animationDelay: '1.5s' }}></div>
+        
+        {/* Code-like flowing elements */}
+        <div className="absolute top-64 left-16 text-green-500/30 font-mono text-sm code-animation">&lt;/&gt;</div>
+        <div className="absolute bottom-64 right-16 text-green-500/30 font-mono text-sm code-animation" style={{ animationDelay: '3s' }}>{ }</div>
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,34 +66,43 @@ export default function HeroSection() {
             </div>
           </div>
           
-          {/* Right Column - 3D Visual Elements */}
+          {/* Right Column - Enhanced 3D Visual Elements matching Orchids design */}
           <div className="relative hidden lg:block">
             <div className="relative w-full h-96">
-              {/* Central floating element */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 tech-gradient rounded-2xl floating-animation glow-effect flex items-center justify-center">
-                <Code className="w-16 h-16 text-white" />
-              </div>
-              
-              {/* Orbiting elements */}
-              <div className="absolute top-16 left-16 w-16 h-16 bg-[hsl(240,3.7%,15.9%)] border border-green-500/30 rounded-xl floating-animation flex items-center justify-center" style={{ animationDelay: '0.5s' }}>
-                <Cpu className="w-8 h-8 text-green-400" />
-              </div>
-              
-              <div className="absolute top-16 right-16 w-16 h-16 bg-[hsl(240,3.7%,15.9%)] border border-green-500/30 rounded-xl floating-animation flex items-center justify-center" style={{ animationDelay: '1s' }}>
-                <Zap className="w-8 h-8 text-green-400" />
-              </div>
-              
-              <div className="absolute bottom-16 left-24 w-12 h-12 bg-green-500/20 rounded-full floating-animation pulse-glow" style={{ animationDelay: '1.5s' }}></div>
-              
-              <div className="absolute bottom-16 right-24 w-20 h-20 border-2 border-green-500/20 rounded-lg floating-animation" style={{ animationDelay: '2s' }}></div>
-              
-              {/* Background grid */}
-              <div className="absolute inset-0 opacity-20">
-                <div className="grid grid-cols-6 grid-rows-6 gap-4 w-full h-full">
-                  {Array.from({ length: 36 }).map((_, i) => (
-                    <div key={i} className="border border-green-500/10 rounded"></div>
-                  ))}
+              {/* Central holographic element */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 modern-glass rounded-3xl floating-3d neon-border flex items-center justify-center">
+                <div className="relative">
+                  <Code className="w-20 h-20 text-green-400" />
+                  <div className="absolute inset-0 w-20 h-20 border border-green-500/50 rounded-xl animate-pulse"></div>
                 </div>
+              </div>
+              
+              {/* Orbiting tech elements */}
+              <div className="absolute top-12 left-12 w-18 h-18 tech-panel rounded-2xl floating-3d flex items-center justify-center" style={{ animationDelay: '0.5s' }}>
+                <Cpu className="w-10 h-10 text-green-400" />
+              </div>
+              
+              <div className="absolute top-12 right-12 w-18 h-18 tech-panel rounded-2xl floating-3d flex items-center justify-center" style={{ animationDelay: '1s' }}>
+                <Zap className="w-10 h-10 text-green-400" />
+              </div>
+              
+              {/* Floating data particles */}
+              <div className="absolute bottom-20 left-20 w-14 h-14 bg-green-500/30 rounded-full floating-3d pulse-glow" style={{ animationDelay: '1.5s' }}></div>
+              <div className="absolute bottom-20 right-20 w-16 h-16 border-2 border-green-500/40 rounded-xl floating-3d" style={{ animationDelay: '2s' }}></div>
+              
+              {/* Tech interface lines */}
+              <div className="absolute inset-0 opacity-30">
+                <svg className="w-full h-full" viewBox="0 0 400 400">
+                  <defs>
+                    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="hsl(142, 76%, 36%)" stopOpacity="0.3" />
+                      <stop offset="100%" stopColor="hsl(142, 76%, 36%)" stopOpacity="0.1" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="200" cy="200" r="150" fill="none" stroke="url(#techGradient)" strokeWidth="1" className="code-animation" />
+                  <circle cx="200" cy="200" r="100" fill="none" stroke="url(#techGradient)" strokeWidth="1" className="code-animation" style={{ animationDelay: '2s' }} />
+                  <circle cx="200" cy="200" r="50" fill="none" stroke="url(#techGradient)" strokeWidth="1" className="code-animation" style={{ animationDelay: '4s' }} />
+                </svg>
               </div>
             </div>
           </div>

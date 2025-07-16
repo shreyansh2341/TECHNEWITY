@@ -23,24 +23,10 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/technewity-labs/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[hsl(240,5%,64.9%)] hover:text-green-400 transition-colors p-2 rounded-lg hover:bg-green-500/10"
+                className="text-[hsl(240,5%,64.9%)] hover:text-green-400 transition-colors p-2 rounded-lg hover:bg-green-500/10 glow-effect"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
-              </a>
-              <a
-                href="#"
-                className="text-[hsl(240,5%,64.9%)] hover:text-green-400 transition-colors p-2 rounded-lg hover:bg-green-500/10"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a
-                href="#"
-                className="text-[hsl(240,5%,64.9%)] hover:text-green-400 transition-colors p-2 rounded-lg hover:bg-green-500/10"
-                aria-label="GitHub"
-              >
-                <Github className="h-6 w-6" />
               </a>
             </div>
           </div>
